@@ -1,0 +1,133 @@
+:root{
+    --key-color: #dadada;
+    --text-color :#4e4e4eb8;
+    --key-shadow: rgba(0, 0, 0, 0.404);
+}
+body{
+    background: #39393a;
+    font-family:Helvetica;
+}
+.keyboard-design .full-box{
+    background: linear-gradient(180deg, #d5d6dd, silver );
+    border: 6px solid silver;
+    box-shadow: inset 0 0 5px rgba(48, 47, 47, 0.842);
+    border-radius: 30px;
+    width: 823px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px auto;
+}
+.lap-speaker{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.dot-pattern{
+    line-height: 0.3;
+}
+.dot-left{
+    position: relative;
+    left: 2.5px;
+}
+.keyboard-box{
+    border-radius: 20px;
+    padding: 13px;
+    margin: 10px;
+    /* border: 1px rgba(0, 0, 0, 0.274); */
+    box-shadow: inset 0 0 10px rgba(70, 70, 70, 0.493);
+}
+.box-row{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+.f-keys{
+    background: linear-gradient(to right, var(--key-color),silver);
+    margin: 4px 0;
+    padding: 5px 5px;
+    min-width: 34px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: lighter;
+    border-radius: 5px;
+    border: 1px solid #000000a9;
+    box-shadow:  0 0 3.5px var(--key-shadow) ;
+}
+.touchpad{
+    background: linear-gradient(180deg, #d5d6dd, silver );
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 5px;
+    height: 153px;
+    width: 289px;
+    margin: 27px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.404);
+    position: relative;
+    left: -4rem;
+}
+.keys{
+    background: linear-gradient(180deg, var(--key-color),silver);
+    font-weight: lighter;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 17px;
+    min-width: 9px;
+    position: relative;
+    margin: 4px 0;
+    font-size: 15px;
+    border: 1px solid #000000a9;
+    box-shadow:  0 0 3.5px var(--key-shadow);
+}
+#thin{
+    padding: 10px 12px;
+    min-width: 7px;
+}
+#back{
+    min-width: 72px;
+    padding: 13px 6px;
+    text-align: right;
+}
+.pos{
+    position: absolute;
+    font-size: 12px;
+    left: 3px;
+    top: 2px;
+}
+#underscore{
+   top: -4px; 
+}
+.small-font{
+    font-size: 10px;
+    text-align: left;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.shift{
+    padding: 13px 8px;
+    min-width: 80px;
+}
+#spacebar{
+    min-width: 228px;
+}
+.nav-button{
+    min-height: 13px;
+    padding: 0 16px;
+    background: linear-gradient(180deg, var(--key-color),silver);
+    font-weight: lighter;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 9px;
+    min-width: 9px;
+    position: relative;
+    font-size: 15px;
+    border: 1px solid #000000a9;
+    box-shadow:  0 0 4.2px var(--key-shadow);
+}
+.arrows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 0;
+}
