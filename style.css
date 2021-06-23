@@ -23,6 +23,11 @@ body{
     height: 496px;
     width: 100%;
     margin: 30px 15px 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .web-cam{
     position: absolute;
@@ -33,6 +38,19 @@ body{
     height: 8px;
     top: 5px;
     opacity: 0.7;
+}
+.screen-content{
+    display: flex;
+    flex-direction: column;
+}
+.screen-content img{
+    width: 200px;
+}
+.screen-content p{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+    font-size: 23px;
 }
 .laptop-design{
     transform: scale(0.58);
@@ -125,6 +143,10 @@ body{
     font-size: 15px;
     border: 1px solid #000000a9;
     box-shadow:  0 0 2px var(--key-shadow);
+}
+.keys:hover, .f-keys:hover, .nav-button:hover{
+    background: linear-gradient(180deg, #000a00, #0a0c0a);
+    color: var(--key-color);
 }
 #thin{
     padding: 10px 12px;
