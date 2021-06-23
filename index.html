@@ -7,19 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keyboard Design</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
 <body>
+    <div class="laptop-design">
+        <div class="screen-strip">
+            <div class="web-cam"></div>
+            <div class="screen"></div>
+            <div class="hp-logo"><img src="https://cdn.freebiesupply.com/images/large/2x/hewlett-packard-logo-black-and-white.png" alt=""></div>
+    </div>
+    <div class="joints">
+        <div class="joint"></div>
+        <div class="joint"></div>
+    </div>
     <div class="keyboard-design">
         <div class="full-box">
             <div class="lap-speaker">
-                <div class="dot-pattern">.......................................................................................................................................................................</div>
-                <div class="dot-left dot-pattern">.......................................................................................................................................................................</div>
-                <div class="dot-pattern">.......................................................................................................................................................................</div>
-                <div class="dot-left dot-pattern">.......................................................................................................................................................................</div>
-                <div class="dot-pattern">.......................................................................................................................................................................</div>
-                <div class="dot-left dot-pattern">.......................................................................................................................................................................</div>
-                <div class="dot-pattern">.......................................................................................................................................................................</div>
+                <div class="dot-pattern">.................................................................................................................................................................................................</div>
+                <div class="dot-left dot-pattern">.................................................................................................................................................................................................</div>
+                <div class="dot-pattern">.................................................................................................................................................................................................</div>
+                <div class="dot-left dot-pattern">.................................................................................................................................................................................................</div>
+                <div class="dot-pattern">.................................................................................................................................................................................................</div>
+                <div class="dot-left dot-pattern">.................................................................................................................................................................................................</div>
+                <div class="dot-pattern">.................................................................................................................................................................................................</div>
             </div>
             <div class="keyboard-box">
                     <div class="box-row">
@@ -54,6 +65,7 @@
                         <div class="keys"><span class="pos" id="underscore" >_</span>-</div>
                         <div class="keys"><span class="pos">+</span>=</div>
                         <div class="keys small-font" id="back">backspace</div>
+                        <div class="keys small-font end">home</div>
                     </div>
                     <div class="box-row">
                         <div class="keys small-font" style="
@@ -73,6 +85,7 @@
                         <div class="keys"><span class="pos">{</span>[</div>
                         <div class="keys"><span class="pos">}</span>]</div>
                         <div class="keys"><span class="pos">|</span>\</div>
+                        <div class="keys small-font end">pg up</div>
                     </div>
                     <div class="box-row">
                         <div class="keys small-font" style="width: 53px; padding: 12px 7px; text-align: left;">caps lock</div>
@@ -88,6 +101,7 @@
                         <div class="keys"><span class="pos">:</span>;</div>
                         <div class="keys"><span class="pos">"</span>'</div>
                         <div class="keys small-font" style="text-align: right; min-width: 80px; padding: 13px 6px; ">enter</div>
+                        <div class="keys small-font end">pg dn</div>
                     </div>
                     <div class="box-row">
                         <div class="keys small-font shift">shift</div>
@@ -101,15 +115,16 @@
                         <div class="keys"><span class="pos"><</span>,</div>
                         <div class="keys"><span class="pos">></span>.</div>
                         <div class="keys"><span class="pos">?</span>/</div>
-                        <div class="keys small-font shift" style="text-align: right; min-width: 91px;" >shift</div>
+                        <div class="keys small-font shift" style="text-align: right; min-width: 91px;" ><span class="pos" style="font-size: 10px;">pause</span>shift</div>
+                        <div class="keys small-font end">end</div>
                     </div>
                     <div class="box-row">
                         <div class="keys small-font">ctrl</div>
                         <div class="keys small-font">fn</div>
-                        <div class="keys small-font">win</div>
-                        <div class="keys small-font">alt</div>
+                        <div class="keys small-font"><i class="fa fa-windows" aria-hidden="true" style="transform: scale(1.5);"></i></div>
+                        <div class="keys small-font alt">alt</div>
                         <div class="keys" id="spacebar">&nbsp;</div>
-                        <div class="keys small-font">alt</div>
+                        <div class="keys small-font alt">alt</div>
                         <div class="keys small-font">ctrl</div>
                         <div class="keys"><</div>
                         <div class="arrows">
@@ -118,10 +133,13 @@
                         </div>
                         <div class="keys">></div>
                     </div>
-            </div>
+                    <div class="brand-text">pavilion</div>
+                    <div id="fingerprint-sensor"></div> 
+            </div>       
             <div class="touchpad"></div>
         </div>
     </div>
+</div>
 </body>
 
 </html>

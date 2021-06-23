@@ -1,23 +1,70 @@
 :root{
-    --key-color: #dadada;
+    --key-color: #efefef;
+    --key-color-grad: #d7d7d7;
     --text-color :#4e4e4eb8;
-    --key-shadow: rgba(0, 0, 0, 0.404);
+    --key-shadow: rgb(0 0 0 / 70%);
 }
 body{
-    background: #39393a;
+    background: #7a7979;
     font-family:Helvetica;
 }
+.screen-strip{
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    width: 871px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -8px auto;
+    position: relative;
+}
+.screen-strip .screen{
+    background: linear-gradient(163deg,#ffdcdc, #affff8,#eeffb9);
+    height: 496px;
+    width: 100%;
+    margin: 30px 15px 78px;
+}
+.web-cam{
+    position: absolute;
+    background: darkgrey;
+    border-radius: 50%;
+    border: 6px solid gray;
+    width: 8px;
+    height: 8px;
+    top: 5px;
+    opacity: 0.7;
+}
+.laptop-design{
+    transform: scale(0.58);
+}
+.hp-logo img{
+    position: absolute;
+    width: 36px;
+    bottom: 22px;
+    filter: invert(1);
+    left: 50%;
+}
+.joints{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.joint{
+    height: 20px;
+    width: 100px;
+    background: linear-gradient(180deg, rgb(104 104 104 / 85%),#e8e8ea, #7171719e);
+    box-shadow: 1px 3px 4px #000000f6;
+}
 .keyboard-design .full-box{
-    background: linear-gradient(180deg, #d5d6dd, silver );
-    border: 6px solid silver;
-    box-shadow: inset 0 0 5px rgba(48, 47, 47, 0.842);
-    border-radius: 30px;
-    width: 823px;
+    background: linear-gradient(180deg, #e8e8ea, #e8e3e3);
+    border-radius: 10px;
+    width: 871px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 80px auto;
+    margin: -6px auto;
 }
 .lap-speaker{
     display: flex;
@@ -32,11 +79,11 @@ body{
     left: 2.5px;
 }
 .keyboard-box{
-    border-radius: 20px;
-    padding: 13px;
-    margin: 10px;
-    /* border: 1px rgba(0, 0, 0, 0.274); */
-    box-shadow: inset 0 0 10px rgba(70, 70, 70, 0.493);
+    border-radius: 3px;
+    padding: 5px 42px;
+    margin: 5px;
+    position: relative;
+    box-shadow:  inset 15px 0 23px rgb(166 166 166 / 12%), inset -15px 0 23px rgb(166 166 166 / 12%);
 }
 .box-row{
     display: flex;
@@ -45,7 +92,7 @@ body{
     color: var(--text-color);
 }
 .f-keys{
-    background: linear-gradient(to right, var(--key-color),silver);
+    background: linear-gradient(to right, var(--key-color),var(--key-color-grad));
     margin: 4px 0;
     padding: 5px 5px;
     min-width: 34px;
@@ -54,21 +101,20 @@ body{
     font-weight: lighter;
     border-radius: 5px;
     border: 1px solid #000000a9;
-    box-shadow:  0 0 3.5px var(--key-shadow) ;
+    box-shadow:  0 0 2px var(--key-shadow) ;
 }
 .touchpad{
-    background: linear-gradient(180deg, #d5d6dd, silver );
+    background: linear-gradient(to right, #e8e8ea8f, #e8e3e3d4  );
     border: 1px solid rgb(146, 146, 146);
-    border-radius: 5px;
-    height: 153px;
-    width: 289px;
-    margin: 27px;
+    border-radius: 3px;
+    height: 170px;
+    width: 322px;
+    margin: 5px 0 10px;
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.404);
     position: relative;
-    left: -4rem;
 }
 .keys{
-    background: linear-gradient(180deg, var(--key-color),silver);
+    background: linear-gradient(180deg, var(--key-color),var(--key-color-grad));
     font-weight: lighter;
     text-align: center;
     border-radius: 4px;
@@ -78,7 +124,7 @@ body{
     margin: 4px 0;
     font-size: 15px;
     border: 1px solid #000000a9;
-    box-shadow:  0 0 3.5px var(--key-shadow);
+    box-shadow:  0 0 2px var(--key-shadow);
 }
 #thin{
     padding: 10px 12px;
@@ -111,10 +157,14 @@ body{
 #spacebar{
     min-width: 228px;
 }
+.alt{
+    text-align: center;
+    min-width: 30px;
+}
 .nav-button{
     min-height: 13px;
     padding: 0 16px;
-    background: linear-gradient(180deg, var(--key-color),silver);
+    background: linear-gradient(180deg, var(--key-color),var(--key-color-grad));
     font-weight: lighter;
     text-align: center;
     border-radius: 5px;
@@ -130,4 +180,29 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 4px 0;
+}
+.end{
+    min-width: 42px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fingerprint-sensor{
+    height: 34px;
+    width: 34px;
+    background: linear-gradient(to right, #e8e8ea8f, #e8e3e3d4  );
+    position: absolute;
+    right: 111px;
+    bottom: -44px;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 3px;
+}
+.brand-text{
+    text-transform: uppercase;
+    position: absolute;
+    letter-spacing: 6px;
+    font-size: 9px;
+    bottom: -21px;
+    opacity: 0.7;
 }
